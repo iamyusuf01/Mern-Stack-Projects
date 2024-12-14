@@ -4,7 +4,7 @@ import { BsMoonFill, BsPlusSquare, BsSunFill } from "react-icons/bs";
 import { useColorMode } from './ui/color-mode';
 const Navbar = () => {
 
-  const {colorMode, toggleColorMode} = useColorMode();
+     const {colorMode, toggleColorMode} = useColorMode();
   return (
     <Container maxW={"1140px"} px={4}>
         <Flex
@@ -31,7 +31,7 @@ const Navbar = () => {
         </Text>
 
         <HStack>
-            <Link>
+            <Link to={'/create'}>
                 <Button>
                     <BsPlusSquare/>
                 </Button>
