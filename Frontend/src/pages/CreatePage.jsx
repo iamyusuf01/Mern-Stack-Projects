@@ -37,7 +37,7 @@ const CreatePage = () => {
     }
   return (
     <Container maxW={"md"}>
-    <Toaster/>
+        <Toaster/>
         <VStack 
          letterSpacing={6}
         >

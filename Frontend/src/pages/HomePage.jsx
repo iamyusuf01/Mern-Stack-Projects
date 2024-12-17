@@ -25,11 +25,7 @@ const HomePage = () => {
               Current Product 
           </Text>
 
-          <SimpleGrid column={{
-              base:1,
-              md:2,
-              xl:3,
-            }} 
+          <SimpleGrid justifyItems={"center"}
             gap={10}
             w={"full"}
           >
@@ -38,7 +34,8 @@ const HomePage = () => {
             ))}
           </SimpleGrid>
 
-          <Text
+            {products.length === 0 && (
+              <Text
            fontSize={"xl"}
            textAlign={"center"}
            fontWeight={"bold"}
@@ -53,6 +50,8 @@ const HomePage = () => {
               </Text>
             </Link>
           </Text>
+            )}
+          
       </VStack>
     </Container>
   )
