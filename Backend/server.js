@@ -18,6 +18,9 @@ app.use("/api/products", productRouter)
 if(process.env.NODE_ENV !== 'production') {
     app.use(express.static(path.join(__dirname, "/Frontend/dist")));
 }
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "/Frontend", "/dist", "index.html"));
+})
 app.listen(PORT, () => {
     databaseConnected();
     console.log(`Server listening on Port ${PORT}`);

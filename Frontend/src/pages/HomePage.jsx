@@ -25,7 +25,7 @@ const HomePage = () => {
               Current Product 
           </Text>
 
-          <SimpleGrid justifyItems={"center"}
+          <SimpleGrid 
             gap={10}
             w={"full"}
           >
